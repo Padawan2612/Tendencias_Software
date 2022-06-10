@@ -1,22 +1,25 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Task {
+export class Example {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  name: string;
+  name_student: string;
 
   @Column({ default: false })
   completed: boolean;
 
   @Column()
-  date_creation: Date;
+  asignature: string;
 
   @Column()
-  date_finish: Date;
+  age: number;
 
   @Column()
-  course: string;
+  date: Date;
+
+  @Column()
+  age1: Date;
 }
